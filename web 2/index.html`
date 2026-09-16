@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Fitness | Forge Your Strength</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;600&family=Space+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="split-flap.css">
+</head>
+<body class="loading">
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">LIFE<span class="logo-suffix">FITNESS</span></div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#services">Training</a></li>
+                    <li><a href="#about">Philosophy</a></li>
+                    <li><a href="#contact">Access</a></li>
+                </ul>
+            </nav>
+            <a href="#contact" class="btn btn-primary">Initialize Membership</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="hero-text reveal reveal-left">
+                        <div class="hero-status-container">
+                            <div id="split-flap-status"></div>
+                        </div>
+                        <div class="eyebrow">EST. 2026 // PERFORMANCE CENTER</div>
+                        <h1>Forge Your <span class="highlight">Strength.</span></h1>
+                        <p>Life Fitness is a technical sanctuary for the disciplined. We specialize in the intersection of combat precision and raw athletic power.</p>
+                        <div class="hero-ctas">
+                            <a href="#services" class="btn btn-primary">View Protocols</a>
+                            <a href="#about" class="btn btn-outline">Our Philosophy</a>
+                        </div>
+                    </div>
+                    <div class="hero-visual reveal reveal-right">
+                        <div class="visual-frame">
+                            <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1470&auto=format&fit=crop" alt="Industrial Gym Interior">
+                            <div class="frame-label">SYS_VISUAL_01</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <div class="container">
+                <div class="section-header reveal reveal-up">
+                    <div class="eyebrow">TRAINING_MODULES</div>
+                    <h2 class="section-title">Specialized <span class="highlight">Protocols</span></h2>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-block reveal reveal-up">
+                        <div class="block-meta">MOD_01 // COMBAT</div>
+                        <div class="block-content">
+                            <h3>MMA & Boxing</h3>
+                            <p>Precision striking and tactical grappling. Our combat protocols are designed to build fighters who are as technical as they are powerful.</p>
+                            <div class="spec-list">
+                                <span>Technical Boxing</span>
+                                <span>BJJ & Grappling</span>
+                                <span>Fight Conditioning</span>
+                            </div>
+                            <a href="#contact" class="btn-link">Request Access &rarr;</a>
+                        </div>
+                        <div class="block-image img-mma"></div>
+                    </div>
+
+                    <div class="service-block reveal reveal-up" style="transition-delay: 0.2s;">
+                        <div class="block-meta">MOD_02 // STRENGTH</div>
+                        <div class="block-content">
+                            <h3>Gym Workouts</h3>
+                            <p>Hypertrophy and strength engineering. Utilizing a curated selection of iron and machinery to sculpt a high-performance physique.</p>
+                            <div class="spec-list">
+                                <span>Compound Lifting</span>
+                                <span>Hypertrophy Focus</span>
+                                <span>Performance Tracking</span>
+                            </div>
+                            <a href="#contact" class="btn-link">Request Access &rarr;</a>
+                        </div>
+                        <div class="block-image img-gym"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-visual reveal reveal-left">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1c8caf7b67a9?q=80&w=1470&auto=format&fit=crop" alt="Gym Training">
+                        <div class="visual-tag">PHILOSOPHY_CORE</div>
+                    </div>
+                    <div class="about-text reveal reveal-right">
+                        <div class="eyebrow">ABOUT_CORE</div>
+                        <h2 class="section-title">The <span class="highlight">Iron</span> Discipline</h2>
+                        <p>Life Fitness is not a wellness center; it is a forge. We operate on the belief that strength is the result of intentional struggle and unwavering discipline.</p>
+                        <p>Whether you are preparing for the octagon or engineering your own physical peak, we provide the environment and the expertise to execute the vision.</p>
+
+                        <div class="stats-grid">
+                            <div class="stat-block">
+                                <div class="stat-value">500+</div>
+                                <div class="stat-label">ACTIVE OPERATIVES</div>
+                            </div>
+                            <div class="stat-block">
+                                <div class="stat-value">15+</div>
+                                <div class="stat-label">ELITE COACHES</div>
+                            </div>
+                            <div class="stat-block">
+                                <div class="stat-value">24/7</div>
+                                <div class="stat-label">FACILITY ACCESS</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info reveal reveal-up">
+                        <div class="eyebrow">COMMUNICATIONS</div>
+                        <h2 class="section-title">Start Your <span class="highlight">Ascent</span></h2>
+                        <p>Secure your place in the facility. Apply for membership or request a trial session.</p>
+
+                        <div class="info-list">
+                            <div class="info-item">
+                                <span class="label">LOCATION</span>
+                                <span class="value">123 Power St, Fitness City</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="label">OPERATIONS</span>
+                                <span class="value">Mon-Sat: 0500 - 2300 | Sun: 0800 - 1600</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="label">CONTACT</span>
+                                <span class="value">access@lifefitness.com</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-wrapper reveal reveal-up" style="transition-delay: 0.2s;">
+                        <form class="contact-form" onsubmit="event.preventDefault(); alert('Application submitted. Our team will review your profile.');">
+                            <div class="form-group">
+                                <label>FULL NAME</label>
+                                <input type="text" required>
+                            </div>
+                            <div class="form-group">
+                                <label>EMAIL ADDRESS</label>
+                                <input type="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label>INTENT</label>
+                                <select>
+                                    <option>Combat Protocols (MMA/Boxing)</option>
+                                    <option>Strength Engineering (Gym)</option>
+                                    <option>Integrated Training (Both)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>GOALS & OBJECTIVES</label>
+                                <textarea rows="4"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit Application</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">LIFE<span class="logo-suffix">FITNESS</span></div>
+                <div class="footer-links">
+                    <a href="#">Instagram</a>
+                    <a href="#">Facebook</a>
+                    <a href="#">YouTube</a>
+                </div>
+                <p class="copyright">&copy; 2026 LIFE FITNESS PERFORMANCE CENTER. ALL RIGHTS RESERVED.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="split-flap.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
