@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Life Fitness | Forge Your Strength</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Righteous&family=Space+Mono&family=Stardos+Stencil:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="split-flap.css">
+</head>
+<body class="">
+
+  <!-- Privacy Policy Modal -->
+  <div id="privacy-modal" class="privacy-modal">
+    <div class="privacy-content">
+      <div class="privacy-header">
+        <span class="kicker">DATA_PROTOCOL</span>
+        <h2>Privacy <span class="highlight">Policy</span></h2>
+      </div>
+      <div class="privacy-body">
+        <p>To operate within the Life Fitness sanctuary, you must agree to the following data protocols:</p>
+        <ul class="privacy-list">
+          <li><strong>Data Collection:</strong> We only collect the identifiers (Name, Email, Intent) provided during membership application.</li>
+          <li><strong>Purpose:</strong> Data is used exclusively for facility access, coach assignment, and protocol tracking.</li>
+          <li><strong>Security:</strong> Your profile is encrypted and stored within our secure technical vault.</li>
+          <li><strong>Third Parties:</strong> We do not sell, trade, or leak operative data to external agencies.</li>
+          <li><strong>Consent:</strong> By entering the forge, you acknowledge these terms of engagement.</li>
+        </ul>
+      </div>
+      <div class="privacy-footer">
+        <button id="privacy-agree" class="btn btn-primary">
+          <span class="sweep"></span><span class="label">I Agree & Initialize</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- DotField background -->
+  <div class="dot-field-container">
+    <canvas></canvas>
+    <svg>
+      <defs>
+        <radialGradient id="dot-field-glow">
+          <stop offset="0%" stopColor="#120F17" />
+          <stop offset="100%" stopColor="transparent" />
+        </radialGradient>
+      </defs>
+      <circle class="glow" cx="-9999" cy="-9999" r="160" fill="url(#dot-field-glow)" style="opacity: 0; will-change: opacity;" />
+    </svg>
+  </div>
+
+  <!-- ===== NAV ===== -->
+  <nav class="nav" id="siteNav">
+    <div class="nav-brand">
+      <div class="nav-logo">
+        <svg width="36" height="36" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M50 5L90 25V75L50 95L10 75V25L50 5Z" fill="var(--accent)" stroke="var(--white)" stroke-width="4"/>
+          <path d="M35 30V70H65" stroke="var(--white)" stroke-width="12" stroke-linecap="square" stroke-linejoin="miter"/>
+          <path d="M50 5V95" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+          <path d="M10 25H90" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+        </svg>
+      </div>
+      <span>LIFE <span class="brand-suffix">FITNESS</span></span>
+    </div>
+    <div class="nav-links" id="mainNav">
+      <a href="#services">Training</a>
+      <a href="#about">Philosophy</a>
+      <a href="#pricing">Membership</a>
+      <a href="#contact">Access</a>
+    </div>
+    <div class="nav-right">
+      <a href="#contact" class="nav-cta">Initialize Membership</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero" class="hero">
+    <div class="hero-inner">
+      <!-- Left: Text -->
+      <div class="hero-text reveal reveal-left">
+        <div class="hero-status-container">
+          <div id="split-flap-status"></div>
+        </div>
+        <h1 class="hero-title">Forge Your <span class="highlight">Strength.</span></h1>
+        <p class="lead">Life Fitness is a technical sanctuary for the disciplined. We specialize in the intersection of combat precision and raw athletic power.</p>
+        <div class="hero-actions">
+          <button class="btn btn-primary"><span class="sweep"></span><span class="label">View Protocols</span></button>
+          <button class="btn btn-outline">Our Philosophy</button>
+        </div>
+      </div>
+
+      <!-- Right: Animated lifter illustration -->
+      <div class="hero-visual reveal reveal-right">
+        <img src="hero-lifter.svg" alt="Athlete pressing a barbell overhead" class="hero-lifter-img">
+      </div>
+    </div>
+
+    </div>
+  <div class="marquee">
+    <div class="marquee-track">
+      <span>STRENGTH</span><span class="hl">•</span>
+      <span>CONDITIONING</span><span class="hl">•</span>
+      <span>MMA &amp; BOXING</span><span class="hl">•</span>
+      <span>BJJ &amp; GRAPPLING</span><span class="hl">•</span>
+      <span>HYPERTROPHY</span><span class="hl">•</span>
+      <span>FIGHT CONDITIONING</span><span class="hl">•</span>
+      <!-- duplicate for seamless loop -->
+      <span>STRENGTH</span><span class="hl">•</span>
+      <span>CONDITIONING</span><span class="hl">•</span>
+      <span>MMA &amp; BOXING</span><span class="hl">•</span>
+      <span>BJJ &amp; GRAPPLING</span><span class="hl">•</span>
+      <span>HYPERTROPHY</span><span class="hl">•</span>
+      <span>FIGHT CONDITIONING</span><span class="hl">•</span>
+    </div>
+  </div>
+  </section>
+  <!-- ===== STATS ===== -->
+  <section class="stats-section">
+    <div class="stats">
+      <div class="stat reveal"><div class="num" data-count="67">0</div><div class="stat-label">Active Operatives</div></div>
+      <div class="stat reveal reveal-delay-1"><div class="num" data-count="3">0</div><div class="stat-label">Elite Coaches</div></div>
+      <div class="stat reveal reveal-delay-2"><div class="num" data-count="7">0</div><div class="stat-label">Classes / week</div></div>
+      <div class="stat reveal reveal-delay-3"><div class="num" data-count="2">0</div><div class="stat-label">Years Running</div></div>
+    </div>
+  </section>
+
+  <!-- ===== PROGRAMS ===== -->
+  <section class="section" id="services">
+    <div class="section-head reveal">
+      <span class="kicker">TRAINING_MODULES</span>
+      <h2>Specialized <span class="highlight">Protocols</span></h2>
+      <p>No fluff, no filler — every protocol has a clear focus and a coach watching your form.</p>
+    </div>
+    <div class="program-grid">
+      <div class="program-card reveal" data-index="01">
+        <div class="program-icon">▲</div>
+        <h3>MMA &amp; Boxing</h3>
+        <p>Precision striking and tactical grappling. Combat protocols designed to build fighters who are as technical as they are powerful.</p>
+        <div class="program-meta"><span>50 MIN</span><span>ALL LEVELS</span></div>
+      </div>
+      <div class="program-card reveal reveal-delay-1" data-index="02">
+        <div class="program-icon">◆</div>
+        <h3>BJJ &amp; Grappling</h3>
+        <p>Ground control, submissions, and positional dominance — structured drilling sessions led by experienced grapplers.</p>
+        <div class="program-meta"><span>60 MIN</span><span>ALL LEVELS</span></div>
+      </div>
+      <div class="program-card reveal reveal-delay-2" data-index="03">
+        <div class="program-icon">●</div>
+        <h3>Gym Workouts</h3>
+        <p>Hypertrophy and strength engineering — compound lifting, performance tracking, and progressive overload week to week.</p>
+        <div class="program-meta"><span>60 MIN</span><span>ALL LEVELS</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section about-section" id="about">
+    <div class="about-grid">
+      <div class="about-visual reveal reveal-left">
+        <img src="gym.jpg" alt="Life Fitness — Dark Industrial Gym">
+        <div class="visual-tag">PHILOSOPHY_CORE</div>
+      </div>
+      <div class="about-text reveal reveal-right">
+        <span class="kicker">ABOUT_CORE</span>
+        <h2>The <span class="highlight">Iron</span> Discipline</h2>
+        <p>Life Fitness is not a wellness center; it is a forge. We operate on the belief that strength is the result of intentional struggle and unwavering discipline.</p>
+        <p>Whether you are preparing for the octagon or engineering your own physical peak, we provide the environment and the expertise to execute the vision.</p>
+        <div class="about-stats">
+          <div class="about-stat">
+            <div class="about-stat-value">67+</div>
+            <div class="about-stat-label">ACTIVE OPERATIVES</div>
+          </div>
+          <div class="about-stat">
+            <div class="about-stat-value">3+</div>
+            <div class="about-stat-label">ELITE COACHES</div>
+          </div>
+          <div class="about-stat">
+            <div class="about-stat-value">24/7</div>
+            <div class="about-stat-label">FACILITY ACCESS</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MINDSET ===== -->
+  <section class="section mindset-section" id="mindset">
+    <div class="mindset-container reveal">
+      <span class="kicker">MINDSET_CORE</span>
+      <div class="quote-wrapper">
+        <h2 id="rotating-quote">"The body achieves what the mind believes."</h2>
+        <p id="rotating-author">— Napoleon Hill</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRICING ===== -->
+  <section class="section pricing-section" id="pricing">
+    <div class="section-head reveal">
+      <span class="kicker">Membership</span>
+      <h2>Pick your plan</h2>
+      <p>Commit to the work. We handle everything else.</p>
+    </div>
+    <div class="price-grid">
+      <div class="price-card reveal">
+        <h3>MMA / Boxing</h3>
+        <div class="amount">Rs 4,000<span>/mo</span></div>
+        <ul>
+          <li>Unlimited classes</li>
+          <li>Combat protocols</li>
+          <li>Expert coaching</li>
+        </ul>
+        <button class="btn btn-outline" style="width:100%; justify-content:center;">Join now</button>
+      </div>
+      <div class="price-card featured reveal reveal-delay-1">
+        <div class="ribbon">Recommended</div>
+        <h3>Gym Workouts</h3>
+        <div class="amount">Rs 5,000<span>/mo</span></div>
+        <ul>
+          <li>Unlimited access</li>
+          <li>Strength engineering</li>
+          <li>Progress tracking</li>
+        </ul>
+        <button class="btn btn-primary" style="width:100%; justify-content:center;"><span class="sweep"></span><span class="label">Join now</span></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA BAND ===== -->
+  <section class="cta-band">
+    <div class="reveal">
+      <h2>Your first class is <span class="highlight">free</span>. No card required.</h2>
+      <p>Come see the floor, meet a coach, and decide for yourself — no pressure, no sales pitch.</p>
+      <button class="btn btn-primary"><span class="sweep"></span><span class="label">Claim free class</span></button>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info reveal reveal-left">
+          <span class="kicker">COMMUNICATIONS</span>
+          <h2>Start Your <span class="highlight">Ascent</span></h2>
+          <p>Secure your place in the facility. Apply for membership or request a trial session.</p>
+          <div class="info-list">
+            <div class="info-item">
+              <span class="info-label">LOCATION</span>
+              <span class="info-value">123 Power St, Rawalpindi</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">OPERATIONS</span>
+              <span class="info-value">Mon–Sat: 0500–2300 | Sun: 0800–1600</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">CONTACT</span>
+              <span class="info-value">access@lifefitness.com</span>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form-wrapper reveal reveal-right">
+          <form class="contact-form" onsubmit="event.preventDefault(); alert('Application submitted. Our team will review your profile.');">
+            <div class="form-group">
+              <label>FULL NAME</label>
+              <input type="text" required>
+            </div>
+            <div class="form-group">
+              <label>EMAIL ADDRESS</label>
+              <input type="email" required>
+            </div>
+            <div class="form-group">
+              <label>INTENT</label>
+              <select>
+                <option>Combat Protocols (MMA/Boxing)</option>
+                <option>Strength Engineering (Gym)</option>
+                <option>Integrated Training (Both)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>GOALS &amp; OBJECTIVES</label>
+              <textarea rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary"><span class="sweep"></span><span class="label">Submit Application</span></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="footer-logo">LIFE <span class="logo-suffix">FITNESS</span></span>
+        <p>A strength and conditioning facility in Rawalpindi, built around coaching that actually pays attention.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Visit</h4>
+        <a href="#">123 Power St, Rawalpindi</a>
+        <a href="#">Mon–Sat, 5am–11pm</a>
+        <a href="#">Sun, 8am–4pm</a>
+      </div>
+      <div class="footer-col">
+        <h4>Train</h4>
+        <a href="#">Class schedule</a>
+        <a href="#">Personal training</a>
+        <a href="#">Nutrition coaching</a>
+      </div>
+      <div class="footer-col">
+        <h4>Follow</h4>
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">YouTube</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 LIFE FITNESS PERFORMANCE CENTER</span>
+      <span>ALL RIGHTS RESERVED</span>
+    </div>
+  </footer>
+
+  <!-- ===== SCRIPTS ===== -->
+  <script src="dotfield.js?v=1.1"></script>
+  <script src="split-flap.js?v=1.1"></script>
+  <script src="script.js?v=1.1"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      console.log("DEBUG: DOM Loaded");
+      document.body.classList.remove('loading');
+
+      setTimeout(() => {
+        console.log("DEBUG: Initializing DotField...");
+        try {
+          if (window.dotFieldInit) {
+            window.dotFieldInit({
+              dotRadius: 1.5,
+              dotSpacing: 14,
+              cursorRadius: 500,
+              cursorForce: 0.1,
+              bulgeOnly: true,
+              bulgeStrength: 67,
+              glowRadius: 160,
+              sparkle: false,
+              waveAmplitude: 0,
+              gradientFrom: 'rgba(255, 0, 0, 1)',
+              gradientTo: 'rgba(255, 0, 0, 0.5)',
+              glowColor: '#120F17'
+            });
+            console.log("DEBUG: DotField Init Called");
+          } else {
+            console.error("DEBUG: window.dotFieldInit is undefined");
+          }
+        } catch (e) {
+          console.error("DEBUG: DotField crashed", e);
+        }
+
+        try {
+          const splitFlapEl = document.getElementById('split-flap-status');
+          if (splitFlapEl && typeof SplitFlapText !== 'undefined') {
+            new SplitFlapText(splitFlapEl, {
+              words: ['BOXING', 'LIFTING', 'HYPERTROPHY', 'MIXED MARTIAL ARTS'],
+              flipDuration: 0.12,
+              stagger: 0.05,
+              cycleDelay: 3200,
+              charset: 'ABCDEFGHIJKLMNOPQRSTUVWXYZ, ',
+              flipsPerChar: 8,
+              tileColor: '#1C1010',
+              textColor: '#C41E3A',
+              tileRadius: 5,
+              gap: 4,
+              fontSize: 18,
+              loop: true,
+              padTo: 16,
+            });
+          }
+        } catch (e) {
+          console.error("DEBUG: SplitFlap crashed", e);
+        }
+      }, 300);
+
+      const revealEls = document.querySelectorAll('.reveal');
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            e.target.classList.add('is-visible');
+            io.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.12 });
+      revealEls.forEach(el => io.observe(el));
+
+      const counters = document.querySelectorAll('[data-count]');
+      const countIo = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) return;
+          const el = entry.target;
+          const target = parseInt(el.getAttribute('data-count'), 10);
+          const duration = 1400;
+          const start = performance.now();
+          function tick(now) {
+            const p = Math.min((now - start) / duration, 1);
+            const eased = 1 - Math.pow(1 - p, 3);
+            el.textContent = Math.round(eased * target);
+            if (p < 1) requestAnimationFrame(tick);
+          }
+          requestAnimationFrame(tick);
+          countIo.unobserve(el);
+        });
+      }, { threshold: 0.4 });
+      counters.forEach(el => countIo.observe(el));
+
+      // Privacy Modal Logic
+      const privacyModal = document.getElementById('privacy-modal');
+      const privacyAgree = document.getElementById('privacy-agree');
+      if (privacyModal && privacyAgree) {
+        privacyModal.style.display = 'flex';
+        privacyAgree.addEventListener('click', () => {
+          privacyModal.style.display = 'none';
+        });
+      }
+    });
+  </script>
+</body>
+</html>

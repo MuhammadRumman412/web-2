@@ -1,0 +1,84 @@
+﻿<svg width="100%" viewBox="0 0 560 470" role="img" xmlns="http://www.w3.org/2000/svg">
+<title>Athlete performing overhead press reps with a loaded barbell</title>
+<desc>A dark panel showing a white pictogram athlete repeatedly pressing a crimson-rimmed barbell overhead and lowering it to the shoulders.</desc>
+<defs>
+<pattern id="dotGrid" width="16" height="16" patternUnits="userSpaceOnUse">
+<circle cx="1.5" cy="1.5" r="1.1" fill="#D91E3C" opacity="0.16"/>
+</pattern>
+<clipPath id="panelClip">
+<path d="M0 0 H560 V416 L528 470 H0 Z"/>
+</clipPath>
+</defs>
+<g clip-path="url(#panelClip)">
+<rect x="0" y="0" width="560" height="470" fill="#121215"/>
+<rect x="0" y="0" width="560" height="470" fill="url(#dotGrid)"/>
+<rect x="0" y="0" width="560" height="70" fill="#E63950" opacity="0.05">
+<animate attributeName="y" values="-70;470" dur="6s" repeatCount="indefinite"/>
+</rect>
+<rect x="0" y="408" width="560" height="62" fill="#0D0D0F"/>
+<line x1="0" y1="408" x2="560" y2="408" stroke="#2A2A2E" stroke-width="1"/>
+<ellipse cx="280" cy="404" rx="66" ry="8" fill="#000000" opacity="0.4"/>
+<g>
+<animateTransform attributeName="transform" type="translate" values="0 0; 0 96; 0 96; 0 0; 0 0" keyTimes="0;0.34;0.5;0.86;1" dur="4.2s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.2 1; 0 0 1 1; 0.4 0 0.2 1; 0 0 1 1"/>
+<rect x="88" y="106" width="384" height="8" rx="4" fill="#4A4A50"/>
+<g>
+<circle cx="88" cy="110" r="42" fill="#1A1A1E" stroke="#E63950" stroke-width="4">
+<animate attributeName="stroke-opacity" values="0.45;1;0.45" dur="2.4s" repeatCount="indefinite"/>
+</circle>
+<circle cx="88" cy="110" r="12" fill="#0D0D0F"/>
+</g>
+<g>
+<circle cx="472" cy="110" r="42" fill="#1A1A1E" stroke="#E63950" stroke-width="4">
+<animate attributeName="stroke-opacity" values="0.45;1;0.45" dur="2.4s" begin="0.5s" repeatCount="indefinite"/>
+</circle>
+<circle cx="472" cy="110" r="12" fill="#0D0D0F"/>
+</g>
+</g>
+<g stroke="#F5F5F3" stroke-width="13" stroke-linecap="round" stroke-linejoin="round" fill="none">
+<polyline points="262,196 250,156 262,110">
+<animate attributeName="points" values="262,196 250,156 262,110; 262,204 236,240 262,208; 262,204 236,240 262,208; 262,196 250,156 262,110; 262,196 250,156 262,110" keyTimes="0;0.34;0.5;0.86;1" dur="4.2s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.2 1; 0 0 1 1; 0.4 0 0.2 1; 0 0 1 1"/>
+</polyline>
+<polyline points="298,196 310,156 298,110">
+<animate attributeName="points" values="298,196 310,156 298,110; 298,204 324,240 298,208; 298,204 324,240 298,208; 298,196 310,156 298,110; 298,196 310,156 298,110" keyTimes="0;0.34;0.5;0.86;1" dur="4.2s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.2 1; 0 0 1 1; 0.4 0 0.2 1; 0 0 1 1"/>
+</polyline>
+<line x1="280" y1="190" x2="280" y2="278">
+<animate attributeName="y1" values="190;198;198;190;190" keyTimes="0;0.34;0.5;0.86;1" dur="4.2s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.2 1; 0 0 1 1; 0.4 0 0.2 1; 0 0 1 1"/>
+<animate attributeName="y2" values="278;286;286;278;278" keyTimes="0;0.34;0.5;0.86;1" dur="4.2s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.2 1; 0 0 1 1; 0.4 0 0.2 1; 0 0 1 1"/>
+</line>
+<polyline points="280,278 260,334 256,400">
+<animate attributeName="points" values="280,278 260,334 256,400; 280,286 254,338 256,400; 280,286 254,338 256,400; 280,278 260,334 256,400; 280,278 260,334 256,400" keyTimes="0;0.34;0.5;0.86;1" dur="4.2s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.2 1; 0 0 1 1; 0.4 0 0.2 1; 0 0 1 1"/>
+</polyline>
+<polyline points="280,278 300,334 304,400">
+<animate attributeName="points" values="280,278 300,334 304,400; 280,286 306,338 304,400; 280,286 306,338 304,400; 280,278 300,334 304,400; 280,278 300,334 304,400" keyTimes="0;0.34;0.5;0.86;1" dur="4.2s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.2 1; 0 0 1 1; 0.4 0 0.2 1; 0 0 1 1"/>
+</polyline>
+</g>
+<circle cx="280" cy="168" r="18" fill="#F5F5F3">
+<animate attributeName="cy" values="168;176;176;168;168" keyTimes="0;0.34;0.5;0.86;1" dur="4.2s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.2 1; 0 0 1 1; 0.4 0 0.2 1; 0 0 1 1"/>
+</circle>
+<g>
+<rect x="430" y="374" width="22" height="30" rx="6" fill="#1A1A1E" stroke="#E63950" stroke-width="3"/>
+<rect x="452" y="382" width="34" height="13" rx="5" fill="#26262A" stroke="#3A3A40" stroke-width="1"/>
+<rect x="486" y="374" width="22" height="30" rx="6" fill="#1A1A1E" stroke="#E63950" stroke-width="3"/>
+</g>
+<g fill="#E63950">
+<circle cx="248" cy="400" r="2.2">
+<animate attributeName="cy" values="400;344;400" dur="3.1s" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0.75;0" dur="3.1s" repeatCount="indefinite"/>
+</circle>
+<circle cx="316" cy="402" r="1.8">
+<animate attributeName="cy" values="402;352;402" dur="2.6s" begin="0.8s" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0.65;0" dur="2.6s" begin="0.8s" repeatCount="indefinite"/>
+</circle>
+<circle cx="288" cy="400" r="1.5">
+<animate attributeName="cy" values="400;358;400" dur="3.6s" begin="1.6s" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0.55;0" dur="3.6s" begin="1.6s" repeatCount="indefinite"/>
+</circle>
+</g>
+<g>
+<path d="M28 330 H172 V392 L158 404 H28 Z" fill="#0D0D0F" opacity="0.92" stroke="#2A2A2E" stroke-width="1"/>
+<text x="44" y="366" font-family="Impact, 'Arial Black', sans-serif" font-size="30" fill="#E63950">500</text>
+<text x="44" y="386" font-family="'Courier New', monospace" font-size="11" fill="#8A8A8E" letter-spacing="1">ACTIVE OPERATIVES</text>
+</g>
+<path d="M0 0 H560 V416 L528 470 H0 Z" fill="none" stroke="#2A2A2E" stroke-width="1.5"/>
+</g>
+</svg>
